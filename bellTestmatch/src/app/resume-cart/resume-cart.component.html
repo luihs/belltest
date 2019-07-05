@@ -1,0 +1,53 @@
+<h4 style="margin-top: 1rem" class="text-center">Pack Familiar Final Para</h4>
+<br>
+<h6 class="text-muted">Papá</h6>
+<label for="customRange1">Seleccionar rango de Precio:</label>
+<ng5-slider [(value)]="value" [options]="options"id="customRange1"></ng5-slider>
+<br>
+<br>
+<ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img src="../../assets/cosmetico1.jpg" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3 class="text-dark">10 seconds between slides...</h3>
+        <p class="text-dark">This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3 class="text-dark">No mouse events...</h3>
+        <p>This carousel doesn't pause or resume on mouse events</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]"  alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>No keyboard...</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[3]" alt="Random fourth slide">
+      <div class="carousel-caption">
+        <h3>And no wrap after last slide.</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+</ngb-carousel>
+<br>
+<div class="form-group">
+  <label for="exampleInputEmail1">Total Papá</label>
+  <fieldset disabled>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="S/.75.00">
+  </fieldset>
+</div>
+<br>
+<div class="form-group">
+    <label for="exampleInputEmail1">Total General</label>
+    <fieldset disabled>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="S/.75.00">
+    </fieldset>
+  </div>
+  <br>
+  <button type="button" class="btn btn-outline-info btn-lg btn-block" style="margin-bottom: 1rem" routerLink="/finalmatch">Finalizar Compra</button>

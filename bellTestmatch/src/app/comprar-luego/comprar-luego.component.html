@@ -1,0 +1,24 @@
+<h4 class="text-center">Compra Después</h4>
+<br>
+<div class="form-check text-center">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+    <label class="form-check-label" for="exampleRadios1">
+      Necesito Asesoría
+    </label>
+</div>
+<div class="form-check text-center">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+      Opción a crédito
+    </label>
+</div>
+<div class="form-check text-center">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+    <label class="form-check-label" for="exampleRadios3">
+      No estoy seguro
+    </label>
+</div>
+<br>
+<button class="btn btn-primary btn-lg btn-block" [swal]="['Genial!', 'Muchas Gracias!', 'success']">
+  Confirmar
+</button>
